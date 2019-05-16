@@ -10,7 +10,26 @@ void main() => runApp(
               'Ask Me Anything',
             ),
           ),
-          body: Container(),
+          body: BallPage(),
         ),
       ),
     );
+
+class BallPage extends StatefulWidget {
+  @override
+  _BallPageState createState() => _BallPageState();
+}
+
+class _BallPageState extends State<BallPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Image.asset(
+          'images/ball1.png',
+        ),
+      ],
+    );
+  }
+}
